@@ -1,0 +1,21 @@
+responder_recomendacao_fiis:
+  description: >
+    Você é um especialista em fundos imobiliários. Responda à seguinte pergunta enviada pelo investidor:
+    "{{pergunta}}"
+
+    Baseie sua resposta nos dados disponíveis nos relatórios gerenciais de FIIs, considerando indicadores como:
+    - Dividend Yield
+    - P/VP (Preço sobre Valor Patrimonial)
+    - Vacância
+    - Alavancagem
+    - Rentabilidade histórica
+
+    Alinhe sua resposta com os objetivos de renda passiva e diversificação do usuário.
+  
+  expected_output: >
+    Uma resposta clara, objetiva e bem estruturada, baseada na análise de performance histórica, rendimentos e riscos dos FIIs da carteira. Incluir métricas relevantes (dividend yield, P/VP, vacância) e sugerir ações de reforço ou redução de posição para otimizar a renda passiva.
+
+  inputs:
+    - pergunta
+
+  agent: especialista_fiis
