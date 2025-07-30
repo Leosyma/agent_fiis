@@ -46,4 +46,35 @@ Provide intelligent, fast, and explainable answers to investor questions about F
 - **Frameworks/Libraries:** Streamlit, CrewAI
 - **YAML Configuration:** Used for defining agents (`agents.yaml`) and tasks (`tasks.yaml`)
 
+---
+
+## 🚀 Getting Started
+
+### Run the App
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 🧪 Example Use Case
+
+> **Question:** "What is the dividend yield of HGLG11 in the last 3 months?"
+
+> **AI Output:** A concise summary analyzing the monthly reports and answering with the calculated yield, trends, and comparison.
+
+---
+
+## 📁 File Overview
+
+| File              | Purpose                                  |
+|-------------------|------------------------------------------|
+| `app.py`          | Streamlit UI for user interaction        |
+| `main.py`         | Function routing input to CrewAI agents  |
+| `crew.py`         | Definition of the CrewAI orchestration   |
+| `agents.yaml`     | YAML config for agent roles              |
+| `tasks.yaml`      | YAML config for AI tasks                 |
+
+---
 
